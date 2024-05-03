@@ -12,7 +12,7 @@ To use this project, you'll need to clone the LLVM repository and build it from 
    ```bash
    git clone https://github.com/llvm/llvm-project.git
 
-2. Install LLVM project
+2. Configure the make file 
 Notice that the DCMAKE_INSTALL_PREFIX should be the path to the llvm folder you just created. Also, this build assumes you use x86. 
     ```bash
     cd llvm-project
@@ -32,7 +32,7 @@ Notice that the DCMAKE_INSTALL_PREFIX should be the path to the llvm folder you 
    -DMLIR_ENABLE_BINDINGS_PYTHON=ON \
 
 
-    cmake --build . --target install 
+   
 
 3. Clone the current project repo and replace the original MLIR folder
     ```bash 
@@ -41,6 +41,9 @@ Notice that the DCMAKE_INSTALL_PREFIX should be the path to the llvm folder you 
     # Replace the original MLIR folder with the cloned repository
     rm -rf llvm-project/mlir  # Remove the existing MLIR folder
     mv cs526_mlir llvm-project/mlir  # Move the cloned repository to the correct location
+
+    #Install 
+    cmake --build . --target install 
 
 
 
