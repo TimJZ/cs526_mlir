@@ -32,10 +32,17 @@ Notice that the DCMAKE_INSTALL_PREFIX should be the path to the llvm folder you 
    -DMLIR_ENABLE_BINDINGS_PYTHON=ON \
 
 
-    ```bash
     cmake --build . --target install 
 
-3. Clone the current project repo and replace the MLIR folder
+3. Clone the current project repo and replace the original MLIR folder
+    ```bash 
+    git clone git@github.com:TimJZ/cs526_mlir.git
+    
+    # Replace the original MLIR folder with the cloned repository
+    rm -rf llvm-project/mlir  # Remove the existing MLIR folder
+    mv cs526_mlir llvm-project/mlir  # Move the cloned repository to the correct location
+
+
 
 
 
