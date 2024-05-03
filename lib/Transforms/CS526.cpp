@@ -585,6 +585,7 @@ void generateProgramStringsToFile() {
         }
     }
 
+    //TODO: Generate the memory interface 
     std::vector<std::string> staticStrings = {
         "memcpy2device image 0 1024",
         "memcpy2device conv1_weights 4096 150",
