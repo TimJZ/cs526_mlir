@@ -46,7 +46,10 @@ Notice that the DCMAKE_INSTALL_PREFIX should be the path to the llvm folder you 
     cmake --build . --target install 
 
 
-
+4. Test the pass 
+    ```bash 
+    cd /mlir/test/cs526_test 
+    /path/to/llvm-project/build/bin/mlir-opt --cs526 real_lenet.mlir
 
 
 
