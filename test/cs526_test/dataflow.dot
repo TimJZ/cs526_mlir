@@ -1,0 +1,17 @@
+digraph DataFlow {
+"loc_\"real_lenet_mlir\"_4_10__tosa_const" -> "loc_\"real_lenet_mlir\"_33_11__tosa_conv2d";
+"loc_\"real_lenet_mlir\"_41_11__tosa_add" -> "func_return@94669373200960";
+"loc_\"real_lenet_mlir\"_7_10__tosa_const" -> "loc_\"real_lenet_mlir\"_24_11__tosa_conv2d";
+"loc_\"real_lenet_mlir\"_13_11__tosa_const" -> "loc_\"real_lenet_mlir\"_15_11__tosa_conv2d";
+"loc_\"real_lenet_mlir\"_39_11__tosa_matmul" -> "loc_\"real_lenet_mlir\"_41_11__tosa_add";
+"loc_\"real_lenet_mlir\"_28_11__tosa_max_pool2d" -> "loc_\"real_lenet_mlir\"_33_11__tosa_conv2d";
+"loc_\"real_lenet_mlir\"_6_10__tosa_const" -> "loc_\"real_lenet_mlir\"_24_11__tosa_conv2d";
+"loc_\"real_lenet_mlir\"_12_10__tosa_const" -> "loc_\"real_lenet_mlir\"_41_11__tosa_add";
+"loc_\"real_lenet_mlir\"_24_11__tosa_conv2d" -> "loc_\"real_lenet_mlir\"_28_11__tosa_max_pool2d";
+"loc_\"real_lenet_mlir\"_33_11__tosa_conv2d" -> "loc_\"real_lenet_mlir\"_39_11__tosa_matmul";
+"loc_\"real_lenet_mlir\"_8_10__tosa_const" -> "loc_\"real_lenet_mlir\"_15_11__tosa_conv2d";
+"loc_\"real_lenet_mlir\"_19_11__tosa_max_pool2d" -> "loc_\"real_lenet_mlir\"_24_11__tosa_conv2d";
+"loc_\"real_lenet_mlir\"_15_11__tosa_conv2d" -> "loc_\"real_lenet_mlir\"_19_11__tosa_max_pool2d";
+"loc_\"real_lenet_mlir\"_5_10__tosa_const" -> "loc_\"real_lenet_mlir\"_33_11__tosa_conv2d";
+"loc_\"real_lenet_mlir\"_3_10__tosa_const" -> "loc_\"real_lenet_mlir\"_39_11__tosa_matmul";
+}
