@@ -12,6 +12,8 @@ To use this project, you'll need to clone the LLVM repository and build it from 
    ```bash
    git clone https://github.com/llvm/llvm-project.git
 
-cd llvm-project
+2. Install LLVM project
+    ```bash
+    cd llvm-project
 
 
